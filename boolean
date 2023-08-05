@@ -1,0 +1,5 @@
+     boolean noneMatch = numbers.stream()
+                .noneMatch(num -> num > 10);
+        System.out.println("None Match: " + noneMatch);
+    }
+}
