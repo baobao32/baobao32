@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+#include <graphics.h>
+#include "tools.h"
+#include <mmsystem.h>
+#pragma comment(lib, "winmm.lib")
+ 
+#define WIN_WIDTH    900
+#define WIN_HEIGHT    600
+ 
+enum { WAN_DOU, XIANG_RI_KUI, ZHI_WU_COUT };
+IMAGE imgBg;
+IMAGE imgBar;
+IMAGE imgCards[ZHI_WU_COUT];
+IMAGE* imgZhiWu[ZHI_WU_COUT][20];
+int curZhiWu;
+int curX, curY;
