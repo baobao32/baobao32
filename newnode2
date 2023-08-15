@@ -1,0 +1,9 @@
+bool insert(const pair<K, V>& kv)
+		{
+			size_t hashi = kv.first % _tables.size();
+			Node* newnode = new Node(kv);
+			newnode->_next = _tables[hashi];
+			_tables[hashi] = newnode;
+			++_n;
+			return true;
+		}
