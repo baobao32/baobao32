@@ -1,0 +1,27 @@
+{
+	label: '\$(eye) MinoMino',
+	kind: CompletionItemKind.Text,
+	data: 3,
+	sortText: 'b',
+	filterText: 'Mino',
+	textEdit: {
+		range: {
+			start: textRange,
+			end: textRange
+		},
+		newText: 'Hello World'
+	}
+},
+
+
+public class Main {
+    static {
+        m=2;
+        //System.out.println(m
+    }
+    //public static int m
+    public static int m=1; 
+    public static void main(String[] args) {
+        System.out.println(m);//2
+    }
+}
